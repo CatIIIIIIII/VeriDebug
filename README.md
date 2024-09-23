@@ -1,0 +1,1 @@
+This is the experimental code and all materials for the paper "VeriDebug: A Unified LLM for Verilog Debugging via Contrastive Embedding and Guided Correction". More details are coming soon.
