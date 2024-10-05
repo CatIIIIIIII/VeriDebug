@@ -1,5 +1,5 @@
 # VeriDebug
-This is the experimental code and all materials for the paper "VeriDebug: A Unified LLM for Verilog Debugging via Contrastive Embedding and Guided Correction". The model checkpoint is hosted on [Hugging Face](https://huggingface.co/WANGNingroci/VeriDebug/).
+This is the experimental code and all materials for the paper "VeriDebug: A Unified LLM for Verilog Debugging via Contrastive Embedding and Guided Correction". The training dataset is located at [Hugging Face](https://huggingface.co/datasets/WANGNingroci/BuggyVerilog/). The model checkpoint is hosted on [Hugging Face](https://huggingface.co/WANGNingroci/VeriDebug/). 
 
 ## Table of Contents
 - [Update Log](#Update)
@@ -44,6 +44,8 @@ huggingface-cli download --resume-download WANGNingroci/VeriSeek --local-dir Ver
 The model will be downloaded to the `VeriSeek` directory.
 Then modify the `config.json` under the `VeriSeek` directory, change the `architectures` to `["LlamaForCausalLMGrit"]` and `model_type` to `"llama_grit"`.
 
+### Data Preparation
+Download the training dataset from [Hugging Face](https://huggingface.co/datasets/WANGNingroci/BuggyVerilog/), and put the two files under `data/train` directory.
 ### Run Script
 Run the training script with the following command:
 ```bash
